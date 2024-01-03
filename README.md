@@ -24,7 +24,7 @@ In general the installation is this:
 - **Treesitter:** for parsing
 ### Useful:
 - **Telescope:** fuzzy finding and other helpful tools
-- **nvim-tree:** modern integrated file explorer
+- **nvim-tree:** modern integrated file explorer. (Uses <C-n> to open)
 - **which-key:** helpful tips for vim macros
 - **Autopairs:** modern style auto-close for brackets
 - **Surround:** collection of macros to surround selections
@@ -32,3 +32,7 @@ In general the installation is this:
 ### Theme:
 - **Melange:** for a soft and easy colorscheme
 - **Lualine:** Neovim statusline, configured with "jellybeans" theme
+
+## Custom Snippets
+The configuration overrides the snippets provided in friendly-snippets in the global context and for C. This is done to make the coding experience even more minimal.
+In addition, global snippets have been provided as shorthands for size operators. I.e. "lt" becomes "<" (**L**ess **t**han). This is simply because my personal keyboard configuration doesn't have the < and > keys.
