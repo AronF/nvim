@@ -9,8 +9,8 @@ This configuration aims to be a lightweight, minimalist, modern, general-purpose
 The configuration is currently only written for Windows users. There's still issues with native fzf on certain machines though.
 In general the installation is this:
 1. Navigate to ```C:\Users\<username>\AppData\Local```
-2. delete the directories nvim and nvim-data if they exist
-3. run:
+2. Delete the directories nvim and nvim-data if they exist
+3. Run:
 ```git clone https://github.com/AronF/nvim --depth 1```
 
 ## Packages
@@ -31,4 +31,4 @@ In general the installation is this:
 - **TreeSJ:** automatically expand or contract blocks
 ### Theme:
 - **Melange:** for a soft and easy colorscheme
-- **Lualine:** Neovim statusline, configured with "jellybean" theme
+- **Lualine:** Neovim statusline, configured with "jellybeans" theme
