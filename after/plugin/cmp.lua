@@ -44,6 +44,13 @@ cmp.setup {
                 fallback()
             end
         end, { 'i', 's' }),
+		['<C-u>'] = cmp.mapping(function(fallback)
+			if cmp.visible() then
+				cmp.close()
+			else
+				fallback()
+			end
+		end,{ 'i', 'c'})
     },
     sources = {
         { name = 'nvim_lsp' },
