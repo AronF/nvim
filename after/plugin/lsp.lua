@@ -1,4 +1,3 @@
-                                                                                                                    
 local on_attach = function(_, bufnr)
 
   local bufmap = function(keys, func)
@@ -25,8 +24,7 @@ local on_attach = function(_, bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
---not using lsp code completion for now
---capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
+capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- no mason
 -- require('lspconfig').lua_ls.setup {
