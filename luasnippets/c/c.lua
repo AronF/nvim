@@ -286,9 +286,5 @@ return {
 		t"\\n\",",
 		f(dp, {1}),
 		t");"
-	}),
-	s({
-		trig = "arrow",
-		name = "Arrow Notation"
-		},{t"->"})
+	})
 }

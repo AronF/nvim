@@ -46,5 +46,11 @@ return {
 		name = "ISO date and time stamp"
 	},{
 		extras.partial(os.date, "%Y-%m-%dT%H:%M:%S")
+	}),
+	s({
+		trig = "arrow",
+		name = "Arrow pointing to the right"
+	},{
+		t"->"
 	})
 }
