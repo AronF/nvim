@@ -23,6 +23,6 @@ vim.opt.fillchars = {eob = ' '}
 vim.keymap.set({ 'v', 'n' }, '<Tab>', '>')
 vim.keymap.set({ 'v', 'n' }, '<S-Tab>', '<')
 
---
+--enter in normal mode for new blank lines
 vim.keymap.set({'n'}, '<CR>', 'o<ESC>')
 vim.keymap.set({'n'}, '<S-CR>', 'O<ESC>')
