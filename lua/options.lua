@@ -22,3 +22,7 @@ vim.opt.fillchars = {eob = ' '}
 --remapping indenting to easier keys
 vim.keymap.set({ 'v', 'n' }, '<Tab>', '>')
 vim.keymap.set({ 'v', 'n' }, '<S-Tab>', '<')
+
+--
+vim.keymap.set({'n'}, '<CR>', 'o<ESC>')
+vim.keymap.set({'n'}, '<S-CR>', 'O<ESC>')
