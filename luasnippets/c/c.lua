@@ -123,7 +123,7 @@ return {
 		name = "#include \"...\" snippet"
 	},
 	{
-		t"#include\"", i(0), t"\""
+		t"#include \"", i(0), t"\""
 	}),
 	s({
 		trig = "#def",
