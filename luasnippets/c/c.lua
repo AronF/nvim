@@ -241,13 +241,9 @@ return {
 		trig = "malloc",
 		name = "Malloc"
 	},{
-		t"( ",
-		i(1, "int"),
-		t" * ) malloc( ",
-		i(2, "n"),
-		t" * sizeof(",
-		f(dp,{ 1 }),
-		t") );"
+		t"malloc(sizeof(",
+		i(1),
+		t"));"
 	}),
 	s({
 		trig = "calloc",
