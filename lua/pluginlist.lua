@@ -1,3 +1,5 @@
+local theme = require("themeopts")
+
 return {
 	--i reject gruvbox dio
     --{
@@ -43,10 +45,11 @@ return {
             "nvim-tree/nvim-web-devicons"
         },
         config = function()
-            require("lualine").setup({
-                icons_enabled = true,
-				options = {theme = 'jellybeans'}
-            })
+			require("lualine").setup(theme[theme.startupTheme])
+			--require("lualine").setup{
+				--icons_enabled = true,
+				--options = {theme = 'jellybeans'}
+			--}
         end,
     },
 	{
@@ -118,7 +121,8 @@ return {
 		'savq/melange-nvim', --the spice must flow
 		init = function()
 			vim.opt.termguicolors = true
-			vim.cmd.colorscheme 'melange'
+			vim.cmd.colorscheme "melange"
+			vim.o.background = theme.startupTheme
 		end
 	}
 }
