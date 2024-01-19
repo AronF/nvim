@@ -29,6 +29,7 @@ vim.keymap.set({ 'v', 'n' }, '<S-Tab>', '<')
 vim.keymap.set({'n'}, '<CR>', 'o<ESC>')
 vim.keymap.set({'n'}, '<S-CR>', 'O<ESC>')
 
+--lightmode and darkmode toggle
 vim.api.nvim_create_user_command('BGToggle',function ()
 	if (vim.o.background == "dark") then
 		vim.o.background = "light"
@@ -41,4 +42,5 @@ vim.api.nvim_create_user_command('BGToggle',function ()
 	vim.cmd.mode()
 end, {})
 
+--shortcut for telescope grep
 vim.api.nvim_create_user_command('LG', 'Telescope live_grep', {})
