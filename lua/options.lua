@@ -40,3 +40,5 @@ vim.api.nvim_create_user_command('BGToggle',function ()
 	--need to redraw the screen for everything to display properly
 	vim.cmd.mode()
 end, {})
+
+vim.api.nvim_create_user_command('LG', 'Telescope live_grep', {})
