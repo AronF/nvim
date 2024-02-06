@@ -1,14 +1,6 @@
 local theme = require("themeopts")
 
 return {
-	--i reject gruvbox dio
-    --{
-     --   "ellisonleao/gruvbox.nvim",
-       -- priority = 1000,
-        --config = function()
-       --     vim.cmd("colorscheme gruvbox")
-        --end
-    --},
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
@@ -46,11 +38,7 @@ return {
         },
         config = function()
 			require("lualine").setup(theme[theme.startupTheme])
-			--require("lualine").setup{
-				--icons_enabled = true,
-				--options = {theme = 'jellybeans'}
-			--}
-        end,
+		end,
     },
 	{
 		'nvim-tree/nvim-tree.lua',
