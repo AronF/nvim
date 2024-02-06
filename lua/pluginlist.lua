@@ -112,5 +112,12 @@ return {
 			vim.cmd.colorscheme "melange"
 			vim.o.background = theme.startupTheme
 		end
+	},
+	{
+		'numToStr/Comment.nvim',
+		lazy = false,
+		config = function ()
+			require("Comment").setup()
+		end
 	}
 }
