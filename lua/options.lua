@@ -21,6 +21,8 @@ vim.o.mouse = 'a'
 
 vim.opt.fillchars = {eob = ' '}
 
+vim.o.guifont = "JetBrainsMono Nerd Font Mono"
+
 --remapping indenting to easier keys
 vim.keymap.set({ 'v', 'n' }, '<Tab>', '>')
 vim.keymap.set({ 'v', 'n' }, '<S-Tab>', '<')
