@@ -119,5 +119,10 @@ return {
 		config = function ()
 			require("Comment").setup()
 		end
+	},
+	{
+		'lervag/vimtex',
+		init = function ()
+		end
 	}
 }
